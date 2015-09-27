@@ -25,6 +25,10 @@ Bower(app)
 def not_found(error):
     return render_template('404.html'), 404
 
+@app.route('/')
+def prueba():
+	return 'Hola a Todos!!! alejo de la gala'
+
 # Import a module / component using its blueprint handler variable (mod_auth)
 from app.authentication.controllers import mod_auth as auth_module
 
